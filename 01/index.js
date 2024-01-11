@@ -1,9 +1,11 @@
 // task 1
-const userName = prompt("Your name:")
-console.log(alert(`Hello, ${userName}!`))
+/* const userName = prompt("Your name:")
+console.log(alert(`Hello, ${userName}!`)) */
 
 // task 2
-
+const num = prompt("your number:")
+const extent = prompt("degree of the number:") 
+console.log(num**extent)
 
 // task 3
 
