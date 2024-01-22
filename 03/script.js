@@ -46,6 +46,25 @@ for (const key of questions) {
 console.log(questions)*/
 
 /* task 6 */
+let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70]
+//6.1. for (const list of numbers) {console.log(list)}
+//for (let i = 0; i < numbers.length; i++) {console.log(numbers[i])}
+
+/*6.2. let sum = 0
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i]
+    console.log(sum)//floop sum
+}
+console.log(sum)//total all massiv */
+
+//6.3.
+let evenNumSum = 0
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        evenNumSum += numbers[i]
+    }
+}
+console.log(`Сумма четных чисел в массиве: ${evenNumSum}`)
 
 /* task 7 */
 
