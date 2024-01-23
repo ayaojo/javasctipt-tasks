@@ -45,8 +45,8 @@ for (const key of questions) {
 }
 console.log(questions)*/
 
-/* task 6 */
-let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70]
+/* task 6 
+let numbers = [42, 65, 49, 68, 56, 47, 70, 42, 51, 35, 58, 63, 40, 70]*/
 //6.1. for (const list of numbers) {console.log(list)}
 //for (let i = 0; i < numbers.length; i++) {console.log(numbers[i])}
 
@@ -55,7 +55,7 @@ for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i]
     console.log(sum)//floop sum
 }
-console.log(sum)//total all massiv */
+console.log(sum)//total all massiv 
 
 //6.3.
 let evenNumSum = 0
@@ -64,12 +64,56 @@ for (let i = 0; i < numbers.length; i++) {
         evenNumSum += numbers[i]
     }
 }
-console.log(`Сумма четных чисел в массиве: ${evenNumSum}`)
+console.log(`sum even numbers: ${evenNumSum}`)
 
-/* task 7 */
+//6.4.
+let maxNum = numbers[0]
+for (const num of numbers) {
+    if (num > maxNum) {
+        maxNum = num
+    }а
+}console.log(`max number in massiv: ${maxNum}`);*/
 
-/* task 8 */
+/* task 7 
+let arr = [5, 4, 3, -3, -10, -1, 8, -20, 0]
+let newArr = []
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+        newArr.push(arr[i])//добавляет элементы в конец
+    }
+}console.log(newArr)*/
 
-/* task 9 */
+/* task 8 
+let nums = [5, 4, 3, 8, 0]
+let limit = 5
+let newNums = []
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] >= limit) {
+        newNums.push(nums[i])//добавляет элементы в конец
+    }
+}console.log(newNums)*/
+
+/* task 9 
+const users = [
+    { name: 'Vasya', age: 23 },
+    { name: 'Olya', age: 12 },
+    { name: 'Anna', age: 22 },
+    { name: 'Alex', age: 18 },
+    { name: 'Valery', age: 8 }
+]
+for (let i = 0; i < users.length; i++) {
+    if (users[i].age > 15) {
+        console.log(users[i].name);
+    }
+}*/
 
 /* task 10 */
+let vegetables = ["carrot", "potato", "tomato", "cucember"]
+let newVegerables = []
+for (let i = 0; i < vegetables.length; i++) {
+    newVegerables.push(`word: ${vegetables[i]}, length: ${vegetables[i].length}`)
+}
+
+for (let i = 0; i < newVegerables.length; i++) {
+    console.log(`${newVegerables[i]} - ${newVegerables[i].length}`);
+}console.log(newVegerables)
